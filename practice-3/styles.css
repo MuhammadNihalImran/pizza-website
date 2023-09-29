@@ -1,0 +1,260 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+html
+{
+  scroll-behavior: smooth;  
+}
+:root
+{
+    --nav-height: 59px;
+}
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(146, 112, 219);
+    position: fixed;
+    width: 100%
+}
+ .logo 
+{
+    width: 120px;
+    padding: 1px 30px
+    
+}
+.nav 
+{
+    background-color: rgb(123, 118, 196);
+    margin: 20px 10px;
+    padding: 0 35px;
+    border-radius: 1em;
+    
+
+}
+
+.nav ul
+{
+    
+    display: flex;
+    column-gap: 2em;margin: 20px 10px;
+    
+}
+.nav ul li
+{
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav ul li a
+{
+    text-decoration: none;
+    color: white;
+
+} 
+#Home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 642px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    top: 9px;
+
+}
+#Home::before
+{
+    content: "";
+    position: absolute;
+    background: url('./bg img.avif') no-repeat center center/cover;
+    height: 642px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#Home h1
+{
+    
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+    display: block;
+    width: 50%;
+    margin: 2em auto;
+    /* border: 2px solid red; */
+    font-family: monospace;
+    color: white;
+    margin-bottom:5px;
+}
+#Home p
+{
+    display: block;
+    /* border: 2px solid red; */
+    font-style: italic;
+    font-weight: 1000;
+    text-align: center;
+    margin-bottom: 200px;
+    color: white;
+}
+#Menu
+{
+ display: flex;
+ width: 100%;
+ height: 492px;
+ position: block;
+ flex-wrap: wrap;
+ /* border: 2px solid red; */
+ }
+.box 
+{
+    /* border: 2px solid rgb(241, 20, 20);  */
+    
+    width: 226px;
+    height: 246px;
+    background-color: #282f31;
+}
+#Menu .box img
+{ 
+    height: 235px;
+    margin: auto;
+    display: block;
+ }
+.box h3
+{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+.box p
+{
+    color: white;
+    margin-left: 5px;
+}
+.form
+{
+    background-color: white;
+}
+.content
+{
+    display: flex;
+    gap: 5em;
+    margin: 80px 0px 0px 12px;
+    
+
+
+}
+ button 
+{
+    
+    display: inline-block;
+    padding: 4px 13px;
+    letter-spacing: 1px;
+     background-color: black; 
+    color: white;
+    border: 1px solid white;
+} 
+.dollar
+{
+    color: #ede09c;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+ } 
+
+
+#Contact
+{
+   display: flex;
+   background-color: white;
+   /* margin-top: 50px; */
+    align-items: center;
+      width: 100%;
+      height: 480px;
+      border: 2px solid red;
+      justify-content: space-around;
+}
+.left
+{ 
+    /* position: relative; */
+    cursor: pointer;
+    display: flex; 
+    /* border: 2px solid black; */
+    /* background-color: white; */
+     /* margin: 8%;  */
+     /* margin-top: 80px; */
+}
+
+.left-1 div
+{
+    padding: 2em;
+    letter-spacing: 1px;
+}
+.left-2 div
+{
+     padding: 2em;
+     letter-spacing: 1px;
+}
+.right
+{ 
+    /* position: relative; */
+    cursor: pointer;
+    
+    /* border: 2px solid black; */
+    /* background-color: white; */
+    /* margin-left: 8px; */
+    /* border: 2px solid green; */
+    /* padding: 2em; */
+    /* margin-top: 100px; */
+    
+    
+    border-radius: 28px;
+}
+.btn{
+    border-radius: 30px;
+    
+}
+.font-group input
+{
+    text-align: center;
+    display: block;
+    /* width: 500px; 
+     padding: 1px; */
+    margin: 11px auto;
+    border-radius: 8px;
+     border: 2px solid black; 
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}    
+
+    
+        @media only screen and (max-width:600px){
+            #Contact{
+                flex-wrap: wrap;
+            }
+            .nav 
+            {
+                display: none;
+            }
+            .box
+            {
+                flex-wrap: wrap;
+                
+            }
+        }
+        @media only screen and (max-width:800px)
+        {
+              .box 
+              {
+                  flex-wrap: wrap;
+              }
+        }
+    
